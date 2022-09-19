@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#logo{
+    width: 20vw;
+    height: 8vh;
+    overflow: hidden;
+}
+#dark{
+    background-color: #202124;
+}
+#light{
+    background-color: white;
+}
+#userImg{
+    border-radius: 50%;
+   
+    /* width: 40px; */
+    height: 40px;
+    /* margin-right: 20px; */
+}
+#navbar{
+    display: flex;
+    height: 10vh;
+    border-bottom: 1px solid black;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    
+}
+#navbar>div:nth-child(2){
+    
+    display: flex;
+    
+}
+
+#searchInput{
+   
+    display: inline;
+    padding: 10px;
+    width: 30vw; 
+    
+}
+
+form>button{
+    display: inline;
+    padding: 10px;
+}
+#contentBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+    margin: 20px auto;
+    
+    
+}
+#contentBox>div{
+    width: 300px;
+    cursor: pointer;
+}
+#contentBox>div:hover{
+    opacity: .6;
+}
+#modalBtn{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+#modalBtn:hover{
+    opacity: .52;
+}
+#modalBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    
+    z-index: 4;
+    align-items: center;
+    
+}
+#modalBox{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 600px;
+    height: 50%; */
+}
+
+#closeBtn{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    padding: 6px 10px;
+    border: none;
+    z-index: 4;
+}
+#closeBtn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#filter{
+    margin-top: 80px;
+    margin-left: 45px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* width: 30vw; */
+    
+    
+}
+#filter>select{
+    padding: 10px;
+    margin: 0 10px;
+}
+#darkMode{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#lightMode{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+#title{
+    padding: 0 10px;
+    cursor: pointer;
+}
+#title:hover{
+    color: #949292;
+}
+.videowrapper {
+    
+    width: 100vw;
+    position: relative;
+    height: 50vh;
+    
+    
+   
+   
+    
+    
+    
+}
+.videowrapper iframe {
+ position: absolute;
+ 
+  width: 100%;
+ 
+  
+}
